@@ -34,9 +34,9 @@ Guidelines for AI-assisted content drafting:
 - **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** — 20 rules for instructing Claude to draft content in your voice without editorializing, fabricating scenes, attributing intent to the tool, or filling epistemic gaps with plausible-sounding content. Each rule grounded in a specific documented failure across five blog post projects
 - **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** — Workflow for using a lightweight model to draft and a frontier model to QA blog posts from project materials
 
-### GitHub Copilot Instructions
+### Templates
 
-- **[copilot-instructions.md](.github/copilot-instructions.md)** — Behavioral guardrails for GitHub Copilot (Chat + Agent Mode), derived from the same failure modes documented in the blog post. Covers scope protection, verification discipline, merge protection, and anti-sycophancy. Place this file in `.github/copilot-instructions.md` in any repository where you use Copilot. The Project Context section is customizable per repo; the behavioral sections remain stable across projects.
+- **[copilot-instructions-template.md](templates/copilot-instructions-template.md)** — Behavioral guardrails for GitHub Copilot (Chat + Agent Mode), derived from the same failure modes documented in the blog post. Covers scope protection, verification discipline, merge protection, and anti-sycophancy. Copy this template to `.github/copilot-instructions.md` in any repository where you use Copilot. Customize the Project Context section per repo; the behavioral sections remain stable across projects.
 
 ---
 
@@ -89,8 +89,6 @@ For detailed analysis of each failure mode and the specific mechanisms that addr
 llm-operational-discipline/
 ├── README.md
 ├── LICENSE
-├── .github/
-│   └── copilot-instructions.md
 ├── playbook/
 │   ├── Claude_Context_Cheat_Sheet.md
 │   ├── Claude_Project_Instructions.md
@@ -98,6 +96,8 @@ llm-operational-discipline/
 │   └── Document_Recovery_Prompts.md
 ├── research-prompt/
 │   └── Research_Project_System_Prompt_v3.md
+├── templates/
+│   └── copilot-instructions-template.md
 └── writing/
     ├── faithful_narration_rules.md
     └── Blog_From_Project_Instructions.md
