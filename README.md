@@ -23,9 +23,14 @@ Core operational documents for managing LLM projects:
 - **[Claude_Project_Setup_Guide.md](playbook/Claude_Project_Setup_Guide.md)** — Step-by-step guide for setting up a new Claude project with proper context management from day one
 - **[Document_Recovery_Prompts.md](playbook/Document_Recovery_Prompts.md)** — Recovery procedures for common failure modes: merge damage, fabrication verification, project audits
 
-### Workflow
+### Writing
 
-- **[Blog_From_Project_Instructions.md](workflow/Blog_From_Project_Instructions.md)** — Instructions for the Sonnet-drafts-Opus-QA blog production pipeline. How to use two models in sequence for structured content production with quality control
+- **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** — Instructions for the Sonnet-drafts-Opus-QA blog production pipeline. How to use two models in sequence for structured content production with quality control
+- **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** — Rules for faithful narration in writing projects
+
+### Research Prompt
+
+- **[Research_Project_System_Prompt_v3.md](research-prompt/Research_Project_System_Prompt_v3.md)** — System prompt for research projects
 
 ---
 
@@ -71,8 +76,11 @@ llm-operational-discipline/
 │   ├── Claude_Project_Instructions.md
 │   ├── Claude_Project_Setup_Guide.md
 │   └── Document_Recovery_Prompts.md
-└── workflow/
-    └── Blog_From_Project_Instructions.md
+├── research-prompt/
+│   └── Research_Project_System_Prompt_v3.md
+└── writing/
+    ├── Blog_From_Project_Instructions.md
+    └── faithful_narration_rules.md
 ```
 
 ---
