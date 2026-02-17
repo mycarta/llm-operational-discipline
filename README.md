@@ -6,7 +6,7 @@
 
 ## What This Is
 
-This repository is a companion to the blog post ["Operational Discipline for LLM Projects: What It Actually Takes"](https://mycartablog.com/?p=13285&preview=1&_ppp=c082ea2798). It contains field-tested systems for managing Claude (or any LLM) on complex, multi-session projects where context management, scope control, and output verification become critical.
+This repository is a companion to the blog post ["Operational Discipline for LLM Projects: What It Actually Takes"](https://mycartablog.com/?p=13285). It contains field-tested systems for managing Claude (or any LLM) on complex, multi-session projects where context management, scope control, and output verification become critical.
 
 These aren't theoretical best practices — they're defensive infrastructure built in response to specific, recurring failure modes encountered during sustained LLM collaboration on multi-document projects spanning dozens of sessions.
 
@@ -23,14 +23,16 @@ Core operational documents for managing LLM projects:
 - **[Claude_Project_Setup_Guide.md](playbook/Claude_Project_Setup_Guide.md)** — Step-by-step guide for setting up a new Claude project with proper context management from day one
 - **[Document_Recovery_Prompts.md](playbook/Document_Recovery_Prompts.md)** — Recovery procedures for common failure modes: merge damage, fabrication verification, project audits
 
-### Writing
-
-- **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** — Instructions for the Sonnet-drafts-Opus-QA blog production pipeline. How to use two models in sequence for structured content production with quality control
-- **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** — Rules for faithful narration in writing projects
-
 ### Research Prompt
 
-- **[Research_Project_System_Prompt_v3.md](research-prompt/Research_Project_System_Prompt_v3.md)** — System prompt for research projects
+- **[Research_Project_System_Prompt_v3.md](research-prompt/Research_Project_System_Prompt_v3.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/?p=XXXXX)
+
+### Writing (2 documents)
+
+Guidelines for AI-assisted content drafting:
+
+- **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** — 20 rules for instructing Claude to draft content in your voice without editorializing, fabricating scenes, attributing intent to the tool, or filling epistemic gaps with plausible-sounding content. Each rule grounded in a specific documented failure across five blog post projects
+- **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** — Workflow for using a lightweight model to draft and a frontier model to QA blog posts from project materials
 
 ---
 
@@ -42,6 +44,16 @@ Core operational documents for managing LLM projects:
 2. Paste **[Claude_Project_Instructions.md](playbook/Claude_Project_Instructions.md)** into your Claude project settings
 3. Keep **[Claude_Context_Cheat_Sheet.md](playbook/Claude_Context_Cheat_Sheet.md)** open for reference during sessions
 4. Bookmark **[Document_Recovery_Prompts.md](playbook/Document_Recovery_Prompts.md)** for when things go wrong
+
+**If you're doing AI-assisted research:**
+
+1. Use **[Research_Project_System_Prompt_v3.md](research-prompt/Research_Project_System_Prompt_v3.md)** as your Claude project instructions
+2. The prompt enforces source classification, decision checkpoints, and evidence grading — read the standing rules before starting
+
+**If you're drafting content with Claude:**
+
+1. Use **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** as project instructions for any drafting session
+2. Follow the **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** pipeline for blog posts
 
 **If you're rescuing an existing degraded project:**
 
@@ -60,8 +72,10 @@ This playbook was built to prevent and recover from specific, documented failure
 - **Sycophancy** — Agreeing with user feedback even when it contradicts source material or project requirements  
 - **Context bloat → premature compaction** — Inefficient context usage forcing earlier-than-necessary summarization with attendant data loss
 - **Groundhog Day effect** — Repeating resolved issues across sessions due to context degradation
+- **Evidence weight inflation** — Citing real sources at higher evidential weight than they support, constructing arguments that look rigorous but aren't
+- **Faithful narration failures** — Editorializing the user's experience, attributing intent to AI tools, upgrading speculative statements to declarative ones, fabricating scenes and timeframes
 
-For detailed analysis of each failure mode and the specific mechanisms that address them, see the full blog post.
+For detailed analysis of each failure mode and the specific mechanisms that address them, see the blog posts.
 
 ---
 
@@ -79,8 +93,8 @@ llm-operational-discipline/
 ├── research-prompt/
 │   └── Research_Project_System_Prompt_v3.md
 └── writing/
-    ├── Blog_From_Project_Instructions.md
-    └── faithful_narration_rules.md
+    ├── faithful_narration_rules.md
+    └── Blog_From_Project_Instructions.md
 ```
 
 ---
