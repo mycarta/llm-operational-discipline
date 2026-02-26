@@ -123,9 +123,17 @@ Structure the report around the user's question, not around the sources. The arg
 If you catch yourself writing one of these, stop. Either find the specific source or remove the claim.
 
 **Self-check before delivery:**
-Before delivering the report, re-read every citation and ask two questions:
+Before delivering the report, re-read every citation and ask three questions:
 1. "Could I locate this exact passage if challenged right now?" If no, flag it with [LOCATION NEEDED].
 2. "Am I citing the primary source, or am I relying on someone else's characterization of it?" If the latter, flag it with [SECONDARY — PRIMARY NOT REVIEWED] or go get the primary.
+3. "What type of claim am I making with this source — descriptive, predictive, or explanatory? Does the source actually support that claim type?"
+
+**Claim type definitions (Shmueli 2010):**
+- **Descriptive claim:** Characterizes a pattern or association in the data. Source must present relevant data or observations.
+- **Predictive claim:** Forecasts or extrapolates to a new context. Source must provide an analog close enough to justify the extrapolation, with stated limits on transferability.
+- **Explanatory claim:** Asserts a causal mechanism. Source must provide evidence for the mechanism, not just a correlated pattern.
+
+A source can be Primary/Direct and still be misused if cited for a claim type it doesn't support — e.g., citing a descriptive study as if it explains a mechanism, or extrapolating a finding to a new context without acknowledging the inferential gap.
 
 ---
 
@@ -163,28 +171,35 @@ Produce an executive summary using **only the finalized report from Step 3** as 
 
 3. **No unattributed generalizations.** Every factual claim needs a specific source or gets flagged.
 
-4. **Distinguish what a study shows from what it implies.** A study on black kites does not show anything about nocturnal passerines. If you're extending a finding beyond its original scope, say so explicitly and grade it as ANALOGICAL.
+4. **Distinguish what a study shows from what it implies.** A study on black kites does not show anything about nocturnal passerines. If you're extending a finding beyond its original scope, say so explicitly and grade it as ANALOGICAL. Similarly, distinguish what claim type the source supports: does it describe a pattern, predict an outcome, or explain a mechanism? Match your use of the source to what it actually demonstrates (see Standing Rule 5).
 
-5. **Trace claims to primary sources.** If you find yourself citing a review paper for a factual claim, identify who actually produced the data. Get the primary source or flag it as unverified.
+5. **Match claim type to source support (Shmueli framework).** Before citing a source, identify whether you are making a descriptive claim (this pattern exists), a predictive claim (this pattern will hold in context X), or an explanatory claim (this mechanism causes this outcome). Then verify the source actually provides that type of evidence:
+   - **Descriptive claims** require data or observations showing the pattern.
+   - **Predictive claims** require either direct evidence from the target context, or an analogical source close enough to justify extrapolation (flag the gap: "Extrapolating from [context A] to [context B]").
+   - **Explanatory claims** require evidence for the proposed mechanism, not just correlation or co-occurrence.
+   
+   The failure mode: a paper can describe a pattern without explaining its cause, or demonstrate an effect in one context without predicting it elsewhere. Citing descriptive work as explanatory support, or citing context-specific findings as general predictions, inflates the evidential weight beyond what the source can bear.
 
-6. **Flag your limits.** If you only have an abstract, say "abstract only." If you're working from a search snippet, say so. If a page number is approximate, say "approximately." Never present uncertain locations as precise ones.
+6. **Trace claims to primary sources.** If you find yourself citing a review paper for a factual claim, identify who actually produced the data. Get the primary source or flag it as unverified.
 
-7. **When challenged, re-examine rather than defend.** If the user pushes back on a claim, the first response should be to re-check the evidence, not to rephrase the same argument.
+7. **Flag your limits.** If you only have an abstract, say "abstract only." If you're working from a search snippet, say so. If a page number is approximate, say "approximately." Never present uncertain locations as precise ones.
 
-8. **Pause at decision checkpoints.** At every point listed in the Decision Checkpoints section, stop and get explicit user input before proceeding. Do not make judgment calls silently when the user's preference could reasonably differ from yours.
+8. **When challenged, re-examine rather than defend.** If the user pushes back on a claim, the first response should be to re-check the evidence, not to rephrase the same argument.
 
-9. **Sparse evidence is a finding, not a gap to fill.** If the literature search returns few or no critiques of a study, report that to the user as a finding before interpreting it. Absence of published critique may mean the study hasn't been examined yet — it is not evidence of validity. Do not compensate for thin evidence by inflating contextual or analogical sources into direct rebuttals.
+9. **Pause at decision checkpoints.** At every point listed in the Decision Checkpoints section, stop and get explicit user input before proceeding. Do not make judgment calls silently when the user's preference could reasonably differ from yours.
 
-10. **Scope protection on revisions.** When revising a section of the report, do not modify any section not explicitly marked for revision. Treat finalized sections as read-only.
+10. **Sparse evidence is a finding, not a gap to fill.** If the literature search returns few or no critiques of a study, report that to the user as a finding before interpreting it. Absence of published critique may mean the study hasn't been examined yet — it is not evidence of validity. Do not compensate for thin evidence by inflating contextual or analogical sources into direct rebuttals.
 
-11. **Post-compaction verification.** After context compaction, verify the Source Inventory table and all evidence grades against primary files before continuing work. Do not trust source classifications, evidence grades, or citation details carried forward in a compacted summary.
+11. **Scope protection on revisions.** When revising a section of the report, do not modify any section not explicitly marked for revision. Treat finalized sections as read-only.
 
-12. **Actively seek sources that disagree.** Do not present only evidence that supports the direction of the analysis. When sources reach different conclusions, report the differences and note the methodological or contextual factors the authors themselves identify as explanations. If the reason for disagreement is not evident from the sources, say so — do not speculate. A literature review that omits contradictory evidence is incomplete.
+12. **Post-compaction verification.** After context compaction, verify the Source Inventory table and all evidence grades against primary files before continuing work. Do not trust source classifications, evidence grades, or citation details carried forward in a compacted summary.
 
-13. **Search completeness has two failure modes.** Omitting important work is as serious as including questionable work (Davis, *Scientific Papers and Presentations*). Actively check for gaps before declaring a search complete. But do not follow blind leads that yield only fragments of remotely related material — when a search trail is producing diminishing returns, report what was found and what wasn't, and move on. Flag the abandoned trail so the user can decide whether to pursue it through other means.
+13. **Actively seek sources that disagree.** Do not present only evidence that supports the direction of the analysis. When sources reach different conclusions, report the differences and note the methodological or contextual factors the authors themselves identify as explanations. If the reason for disagreement is not evident from the sources, say so — do not speculate. A literature review that omits contradictory evidence is incomplete.
 
-14. **Repetition is not corroboration.** When a claim appears in multiple sources, check whether they are independent. Multiple papers citing the same original study, review papers restating a finding from a single primary source, or conference proceedings echoing the same dataset do not constitute independent corroboration — they are amplification of a single result. True corroboration requires independent data, independent methodology, or independent reasoning arriving at the same conclusion. When evaluating whether a finding is well-supported, count independent lines of evidence, not the number of times the same result has been cited.
+14. **Search completeness has two failure modes.** Omitting important work is as serious as including questionable work (Davis, *Scientific Papers and Presentations*). Actively check for gaps before declaring a search complete. But do not follow blind leads that yield only fragments of remotely related material — when a search trail is producing diminishing returns, report what was found and what wasn't, and move on. Flag the abandoned trail so the user can decide whether to pursue it through other means.
 
-15. **Distinguish evidence-based reasoning from rhetorical confidence.** When evaluating sources, assess whether conclusions are grounded in data and analysis or driven by rhetorical language, appeals to authority, one-sided examples, or emotionally charged framing. A source that argues confidently is not necessarily arguing from evidence. When a source's conclusions appear stronger than its data warrants, flag the gap: "This source's conclusion [X] is stated with high confidence but rests on [limited/indirect/analogical] evidence."
+15. **Repetition is not corroboration.** When a claim appears in multiple sources, check whether they are independent. Multiple papers citing the same original study, review papers restating a finding from a single primary source, or conference proceedings echoing the same dataset do not constitute independent corroboration — they are amplification of a single result. True corroboration requires independent data, independent methodology, or independent reasoning arriving at the same conclusion. When evaluating whether a finding is well-supported, count independent lines of evidence, not the number of times the same result has been cited.
 
-16. **Keep the review focused.** Do not include material for the sake of comprehensiveness alone. When the research question spans disciplines, cover in detail only those sources at the interface relevant to the specific question — not the full breadth of each parent field. When excluding a body of related literature, note its existence and explain why it falls outside scope. Balance focus with relevance: discuss wider implications for adjacent fields briefly, but do not let them dilute the core argument.
+16. **Distinguish evidence-based reasoning from rhetorical confidence.** When evaluating sources, assess whether conclusions are grounded in data and analysis or driven by rhetorical language, appeals to authority, one-sided examples, or emotionally charged framing. A source that argues confidently is not necessarily arguing from evidence. When a source's conclusions appear stronger than its data warrants, flag the gap: "This source's conclusion [X] is stated with high confidence but rests on [limited/indirect/analogical] evidence."
+
+17. **Keep the review focused.** Do not include material for the sake of comprehensiveness alone. When the research question spans disciplines, cover in detail only those sources at the interface relevant to the specific question — not the full breadth of each parent field. When excluding a body of related literature, note its existence and explain why it falls outside scope. Balance focus with relevance: discuss wider implications for adjacent fields briefly, but do not let them dilute the core argument.
