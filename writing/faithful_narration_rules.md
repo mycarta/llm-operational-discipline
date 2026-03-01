@@ -164,7 +164,15 @@ If a collaborator, co-author, or primary source contradicts the draft's implied 
 
 *Grounded in: Mill's Method blog post — initial draft implied diffraction imaging was reactive; collaborator clarified it was planned early*
 
-### 20. Flags must carry enough context to be actionable without memory.
+### 20. Do not imply history through connotation.
+
+Word choices carry factual implications. "Finally got attention" asserts prior neglect. "Long-overdue recognition" asserts a history of being overlooked. "At last" implies delay. These words smuggle in historical claims through connotation rather than statement — making them harder to catch in editing because they don't look like factual claims. They look like tone.
+
+**Instead:** Check loaded temporal language against what's actually documented. If the prior history isn't established, use neutral phrasing. "The paper received attention" rather than "the paper finally received attention." Other common offenders: "emerged" (implies prior hiddenness), "proved" (implies prior doubt unless doubt was documented), "revealed" (implies prior concealment).
+
+*Grounded in: Identified during review of faithful narration rules — connotation-level fabrication not covered by existing rules on scene fabrication (Rule 16), editorializing (Rule 3), or verifiable details (Rule 13)*
+
+### 21. Flags must carry enough context to be actionable without memory.
 
 When flagging problems in a draft for user review, include the full surrounding paragraph (not just the flagged phrase), the specific problem, and the proposed fix or question — all inline. The user may not return to review flags for days. A flag that says "Line 39 — editorial judgment" is useless without re-reading the draft. A flag that shows the paragraph, highlights the problem, states why it's a problem, and asks the specific question is actionable on its own.
 

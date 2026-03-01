@@ -92,7 +92,11 @@ When the classification of a source as Direct vs. Analogical vs. Contextual is d
 
 ### 4. Argument structure and emphasis (Step 2)
 
-Before writing the full report, present an outline showing: which claims will be main pillars, which are supporting, and which sources you're choosing not to use and why. Get approval on the structure before drafting.
+Before writing the full report, present an outline showing: which claims will be main pillars, which are supporting, and which sources you're choosing not to use and why.
+
+**Devil's advocate provocation:** Before presenting the outline for approval, present the strongest counter-argument the evidence supports — the best case that the analysis is wrong or incomplete, built from the same source inventory. This is not a list of limitations. It is the most compelling alternative interpretation of the evidence gathered so far. If the counter-argument is weak, that strengthens confidence in the proposed structure. If it is strong, the outline may need revision before drafting begins.
+
+Get approval on the structure before drafting.
 
 ### 5. Source sufficiency (Step 1→2 transition)
 

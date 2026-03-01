@@ -38,6 +38,12 @@ Guidelines for AI-assisted content drafting:
 
 - **[copilot-instructions-template.md](templates/copilot-instructions-template.md)** — Behavioral guardrails for GitHub Copilot (Chat + Agent Mode), derived from the same failure modes documented in the blog post. Covers scope protection, verification discipline, merge protection, and anti-sycophancy. Copy this template to `.github/copilot-instructions.md` in any repository where you use Copilot. Customize the Project Context section per repo; the behavioral sections remain stable across projects.
 
+### Notes
+
+Architecture and design notes on the methodology:
+
+* **[claude_code_architecture_mapping.md](notes/claude_code_architecture_mapping.md)** — Mapping between the current research methodology system (Claude Projects) and the Claude Code skills/agents architecture described by Shane Butler. Documents the structural parallel, where the two approaches diverge (syntactic vs. semantic error surfaces), and what a migration to Claude Code would look like.
+
 ---
 
 ## Quick Start
@@ -89,17 +95,14 @@ For detailed analysis of each failure mode and the specific mechanisms that addr
 llm-operational-discipline/
 ├── README.md
 ├── LICENSE
+├── notes/
+│   └── claude_code_architecture_mapping.md
 ├── playbook/
 │   ├── Claude_Context_Cheat_Sheet.md
 │   ├── Claude_Project_Instructions.md
 │   ├── Claude_Project_Setup_Guide.md
 │   └── Document_Recovery_Prompts.md
-├── research-prompt/
-│   └── Research_Project_System_Prompt_v3.md
-├── templates/
-│   └── copilot-instructions-template.md
-└── writing/
-    ├── faithful_narration_rules.md
+└── workflow/
     └── Blog_From_Project_Instructions.md
 ```
 
