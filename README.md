@@ -44,6 +44,14 @@ Architecture and design notes on the methodology:
 
 * **[claude_code_architecture_mapping.md](notes/claude_code_architecture_mapping.md)** — Mapping between the current research methodology system (Claude Projects) and the Claude Code skills/agents architecture described by Shane Butler. Documents the structural parallel, where the two approaches diverge (syntactic vs. semantic error surfaces), and what a migration to Claude Code would look like.
 
+### References
+
+Annotated external sources that validate and extend the operational discipline framework:
+
+- **[hafner-beyond-the-vibes.md](references/hafner-beyond-the-vibes.md)** — Summary and key takeaways from Robert Hafner's comprehensive guide to AI coding assistants and agents (AGENTS.md, spec-driven development, anti-sycophancy guardrails)
+- **[bullshitbench.md](references/bullshitbench.md)** — Summary and relevance of Peter Gostev's empirical benchmark measuring model pushback on nonsensical prompts
+- **[claude-code-project-template.md](references/claude-code-project-template.md)** — Analysis of a recommended Claude Code project structure, with mapping to this repo's equivalents
+
 ---
 
 ## Quick Start
@@ -102,9 +110,23 @@ llm-operational-discipline/
 │   ├── Claude_Project_Instructions.md
 │   ├── Claude_Project_Setup_Guide.md
 │   └── Document_Recovery_Prompts.md
+├── references/
+│   ├── hafner-beyond-the-vibes.md
+│   ├── bullshitbench.md
+│   └── claude-code-project-template.md
 └── workflow/
     └── Blog_From_Project_Instructions.md
 ```
+
+---
+
+## Related Resources
+
+External references that validate and extend the operational discipline framework from different angles. Full annotated summaries in the [`references/`](references/) directory.
+
+- **[Beyond the Vibes: A Rigorous Guide to AI Coding Assistants and Agents](https://blog.tedivm.com/guides/2026/03/beyond-the-vibes-coding-assistants-and-agents/)** (Robert Hafner, March 2026) — Covers AGENTS.md, spec-driven development, anti-sycophancy guardrails, and context window management from a software engineering perspective. Same problems, same solutions, different domain.
+- **[BullshitBench](https://github.com/petergpt/bullshit-benchmark)** (Peter Gostev) — Empirical benchmark measuring model pushback on nonsensical prompts. Anthropic models dominate; Sonnet pushes back harder than Opus. Direct evidence for the sycophancy failure mode documented in this repo.
+- **Claude Code Project Structure Template** — Recommended repo layout formalizing the pattern of repository structure as AI instruction set. Introduces `hooks/` (automated guardrails) and per-directory `CLAUDE.md` files. See [references/claude-code-project-template.md](references/claude-code-project-template.md).
 
 ---
 

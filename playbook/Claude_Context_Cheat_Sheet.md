@@ -37,3 +37,14 @@ There's no formula, but there are natural break points. The goal is to keep each
 - Deep research (API pricing, Anthropic docs, university program catalogs): **dedicated chat.** Research sessions consume enormous context through search results. Give them their own space.
 
 **Rule of thumb:** if you'd take a coffee break there in real life, it's probably a good place to start a new chat.
+
+---
+
+## Model Selection and Pushback Behavior
+
+Not all Claude models handle skepticism the same way. Data from [BullshitBench](https://petergpt.github.io/bullshit-benchmark/viewer/index.html) (a benchmark testing whether models push back on nonsensical prompts) shows systematic differences:
+
+- **Sonnet pushes back harder** — more conservative, more likely to refuse or challenge broken premises. Better for tasks requiring skepticism: research verification, source auditing, fact-checking, quality assessment.
+- **Opus engages more flexibly** — more latitude to work with edge cases and nuance. Better for tasks requiring creative synthesis, exploratory analysis, or sustained reasoning across ambiguous material.
+
+The model that feels "too cautious" in general conversation may be the right choice when the correct answer is sometimes "this doesn't make sense." Match the model to the task's epistemic requirements, not just its complexity.
