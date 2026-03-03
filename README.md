@@ -52,6 +52,10 @@ Annotated external sources that validate and extend the operational discipline f
 - **[bullshitbench.md](references/bullshitbench.md)** — Summary and relevance of Peter Gostev's empirical benchmark measuring model pushback on nonsensical prompts
 - **[claude-code-project-template.md](references/claude-code-project-template.md)** — Analysis of a recommended Claude Code project structure, with mapping to this repo's equivalents
 
+#### Minor References
+
+- **[palantir-ontology-augmented-generation.md](references/palantir-ontology-augmented-generation.md)** — Palantir (2025), "Connecting AI to Decisions with the Palantir Ontology." LLMs need access to logic assets (functions, models, optimizers), not just data (RAG). Their "Ontology-Augmented Generation" (OAG) framing = deterministic tools surfaced to non-deterministic LLM reasoning. Bullshit-detector's repo-as-agent-registry is a lightweight implementation of the same pattern. The enterprise orchestration layer is overkill for constrained analytical pipelines.
+
 ---
 
 ## Quick Start
