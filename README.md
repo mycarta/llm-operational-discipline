@@ -117,8 +117,14 @@ llm-operational-discipline/
 ├── references/
 │   ├── hafner-beyond-the-vibes.md
 │   ├── bullshitbench.md
-│   └── claude-code-project-template.md
-└── workflow/
+│   ├── claude-code-project-template.md
+│   └── palantir-ontology-augmented-generation.md
+├── research-prompt/
+│   └── Research_Project_System_Prompt_v3.md
+├── templates/
+│   └── copilot-instructions-template.md
+└── writing/
+    ├── faithful_narration_rules.md
     └── Blog_From_Project_Instructions.md
 ```
 
