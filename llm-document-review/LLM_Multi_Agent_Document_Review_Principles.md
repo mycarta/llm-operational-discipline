@@ -65,6 +65,8 @@ When the validator adds or corrects items, tag them with a `post_qa_note` field 
 **Session handoff files are the single most important practice.**  
 LLM context windows compact or reset. Conversations end. The numbered session handoff file (Session_Handoff_N.md) records what was completed, what was decided, what's next, and what files were produced. Write one at every natural breakpoint. It takes 5 minutes and saves hours of reconstruction. Without it, every compaction or new session is a cold start.
 
+**Save every deliverable to disk immediately.** Compaction is silent — neither the user nor the LLM is warned before older turns are dropped. Any output the user will act on (checklists, ranked lists, QA items, verification reports, not just "major" documents) must be written to the outputs directory in the same turn it is produced. The word "major" is a trap: it lets the LLM rationalize that a ranked QA checklist is "just conversational" and skip the save. It isn't. If someone would be frustrated to lose it, it's a deliverable.
+
 **One living tracker file is the source of truth.**  
 A single markdown file tracking every document's status: extracted or not, which tool, QA status, output file names, consent/confidentiality, flags, deviations. Updated immediately after each extraction. Prevents duplicate work, catches gaps, enables status reporting. Don't rely on memory, session history, or file listing.
 
