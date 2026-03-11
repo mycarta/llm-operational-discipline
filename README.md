@@ -14,7 +14,7 @@ These aren't theoretical best practices — they're defensive infrastructure bui
 
 ## What's in the Repo
 
-### Playbook (4 documents)
+### Playbook (5 documents)
 
 Core operational documents for managing LLM projects:
 
@@ -22,6 +22,7 @@ Core operational documents for managing LLM projects:
 - **[Claude_Project_Instructions.md](playbook/Claude_Project_Instructions.md)** — Complete project instructions template. Paste this into your Claude project settings to establish baseline operational discipline
 - **[Claude_Project_Setup_Guide.md](playbook/Claude_Project_Setup_Guide.md)** — Step-by-step guide for setting up a new Claude project with proper context management from day one
 - **[Document_Recovery_Prompts.md](playbook/Document_Recovery_Prompts.md)** — Recovery procedures for common failure modes: merge damage, fabrication verification, project audits
+- **[Bias_Prevention_for_Multi_Source_Synthesis.md](playbook/Bias_Prevention_for_Multi_Source_Synthesis.md)** — Prompt-level guardrails for LLM-assisted synthesis across sources that differ in length, sophistication, or access level. Five rules that prevent verbosity bias, flatten category counts, track absences, preserve intensity, and enforce confidentiality boundaries
 
 ### Research Prompt
 
