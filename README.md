@@ -102,6 +102,55 @@ For detailed analysis of each failure mode and the specific mechanisms that addr
 
 ---
 
+## Context Window Management: The Memento Problem
+
+Long AI conversations hit a wall: the context window fills up, the system compresses the history into a lossy summary, and the AI effectively loses its memory. Details, decisions, nuances — gone. It wakes up with a vague sense of what happened but no reliable specifics.
+
+This is anterograde amnesia. The AI can't form new long-term memories within a session. And like the protagonist of Memento, the only fix is external: write it down before you forget.
+
+### The pattern
+
+During a long session building a series of data science notebooks, the conversation approached the compression threshold. Here's what happened:
+
+> **Me:** Do we do it in another chat or here? Here would have the advantage of a lot of context, but that can be a double-edged sword, unless we make sure you retain context after compaction.
+>
+> **Claude:** Here, but let me checkpoint first so compaction doesn't eat the context we need.
+>
+> *[checkpoint saved]*
+>
+> **Claude:** If compaction hits, I read that file first and we're back in context. Go ahead.
+>
+> **Me:** How do you remind yourself to read it?
+>
+> **Claude:** I don't. That's the honest answer. After compaction, I get a lossy summary and whatever the system prompt tells me. The system prompt says to read the latest Session Handoff file, but it doesn't know about the checkpoint specifically.
+>
+> Two fixes:
+>
+> 1. You remind me. First message after compaction: "Read the checkpoint file before responding."
+> 2. I put it in the handoff. Which I should do now.
+>
+> **Me:** It's like having anterograde amnesia. You have to write yourself a note, like the protagonist of Memento.
+>
+> **Claude:** Anterograde amnesia. And yes, that's exactly what it is. The checkpoint files are the tattoos. The handoff is the Polaroid. And you're the guy who has to hold up the photo and say "read this" when I wake up confused.
+>
+> At least I don't have to tattoo it backwards on my chest. Markdown is easier to read.
+
+### The system
+
+Three components, same as Memento:
+
+1. **Checkpoint files (the tattoos):** Save critical state to a file before compression happens. Include decisions made, context needed, and explicit instructions for what to read on resumption.
+2. **Session handoff documents (the Polaroids):** A running summary of the session state, updated after each major deliverable. Include a line like: `IF COMPACTION OCCURS: Read /path/to/checkpoint.md immediately.`
+3. **The human reminder (the mirror):** If all else fails, the first message after context loss should be: "Read [file] before responding." Belt and suspenders. The AI won't remember to check its own notes.
+
+### Why this matters
+
+The AI is a brilliant collaborator with a known limitation. You don't fire a colleague who's great at their job but has bad memory — you build systems around the limitation. Sticky notes, shared docs, morning briefings. The Memento pattern is the same thing, adapted for a context window instead of a human brain.
+
+The alternative — losing hours of accumulated context to silent compression — is the AI equivalent of waking up in a motel room with no idea how you got there. Don't let that happen to your project.
+
+---
+
 ## Repository Structure
 
 ```
