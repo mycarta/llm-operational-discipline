@@ -39,6 +39,14 @@ Guidelines for AI-assisted content drafting:
 
 - **[copilot-instructions-template.md](templates/copilot-instructions-template.md)** — Behavioral guardrails for GitHub Copilot (Chat + Agent Mode), derived from the same failure modes documented in the blog post. Covers scope protection, verification discipline, merge protection, and anti-sycophancy. Copy this template to `.github/copilot-instructions.md` in any repository where you use Copilot. Customize the Project Context section per repo; the behavioral sections remain stable across projects.
 
+### Idea Capture
+
+Tangent management during LLM sessions:
+
+- **[Idea_Capture_as_LLM_Discipline.md](idea-capture/Idea_Capture_as_LLM_Discipline.md)** — Why tangent capture during LLM sessions is an operational discipline, not a productivity hack. Explains the cognitive cost of unrecorded tangents and how they degrade focus or get lost entirely
+- **[idea_capture_template.html](idea-capture/idea_capture_template.html)** — Single-file HTML tool that POSTs ideas directly to a Trello board via REST API. No dependencies, no build step — just open in a browser
+- **[README.md](idea-capture/idea_capture_README.md)** — Setup instructions: how to get your Trello API key, token, and board/list IDs
+
 ### Notes
 
 Architecture and design notes on the methodology:
@@ -157,6 +165,10 @@ The alternative — losing hours of accumulated context to silent compression �
 llm-operational-discipline/
 ├── README.md
 ├── LICENSE
+├── idea-capture/
+│   ├── Idea_Capture_as_LLM_Discipline.md
+│   ├── idea_capture_template.html
+│   └── idea_capture_README.md
 ├── notes/
 │   └── claude_code_architecture_mapping.md
 ├── playbook/
