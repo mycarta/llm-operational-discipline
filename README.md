@@ -26,7 +26,7 @@ Core operational documents for managing LLM projects:
 
 ### Research Prompt
 
-- **[Research_Project_System_Prompt_v3.md](research-prompt/Research_Project_System_Prompt_v3.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/?p=XXXXX)
+- **[Research_Project_System_Prompt_v4.md](research-prompt/Research_Project_System_Prompt_v4.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/?p=XXXXX)
 
 ### Writing (2 documents)
 
@@ -78,7 +78,7 @@ Annotated external sources that validate and extend the operational discipline f
 
 **If you're doing AI-assisted research:**
 
-1. Use **[Research_Project_System_Prompt_v3.md](research-prompt/Research_Project_System_Prompt_v3.md)** as your Claude project instructions
+1. Use **[Research_Project_System_Prompt_v4.md](research-prompt/Research_Project_System_Prompt_v4.md)** as your Claude project instructions
 2. The prompt enforces source classification, decision checkpoints, and evidence grading — read the standing rules before starting
 
 **If you're drafting content with Claude:**
@@ -182,7 +182,7 @@ llm-operational-discipline/
 │   ├── claude-code-project-template.md
 │   └── palantir-ontology-augmented-generation.md
 ├── research-prompt/
-│   └── Research_Project_System_Prompt_v3.md
+│   └── Research_Project_System_Prompt_v4.md
 ├── templates/
 │   └── copilot-instructions-template.md
 └── writing/

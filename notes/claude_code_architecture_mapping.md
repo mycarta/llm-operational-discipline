@@ -18,7 +18,7 @@ This maps directly to the current research methodology system:
 
 | Butler's Claude Code | This project (Claude Projects) | Function |
 |---|---|---|
-| CLAUDE.md | Research_Project_System_Prompt_v3.md | Persona, scope, workflow, standing rules |
+| CLAUDE.md | Research_Project_System_Prompt_v4.md | Persona, scope, workflow, standing rules |
 | Skills | faithful_narration_rules.md | Always-on standards that apply to all output |
 | Agents | The 5-step workflow (Scope → Gather → Report → Review → Summary) | Multi-step process with defined gates |
 | Rules | Standing Rules + Prohibited Phrases | Non-negotiable guardrails |
@@ -47,7 +47,7 @@ The corrections also compound differently. Butler's corrections are about presen
 
 If this research methodology were moved into Claude Code, the mapping would be:
 
-**CLAUDE.md** ← Research_Project_System_Prompt_v3.md (persona, scope, workflow gates, standing rules, prohibited phrases)
+**CLAUDE.md** ← Research_Project_System_Prompt_v4.md (persona, scope, workflow gates, standing rules, prohibited phrases)
 
 **Skills directory:**
 - `faithful_narration.md` ← faithful_narration_rules.md (trigger: any content drafted in the user's voice)

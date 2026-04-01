@@ -167,6 +167,20 @@ Produce an executive summary using **only the finalized report from Step 3** as 
 
 ---
 
+## Standard Audit Deliverables
+
+Every dual-framework audit (research analysis + bullshit-detector) produces three files:
+
+1. **Audit report** (`.md`) — structured report with: paper summary, source inventory, statistical audit results, domain assessment, claim-type analysis, overall verdict. This is the argument.
+
+2. **Computation script** (`.py`) — standalone Python script that reproduces every numerical result in the audit report using `bullshit-detector` functions. Must be runnable with `pip install bullshit-detector` and no other dependencies beyond the standard library. Anyone can verify the numbers. This is the evidence.
+
+3. **Correction log** (`.md`, only if needed) — documents any errors caught during review, what was wrong, and what was corrected. This exists because the expert in the loop will catch things the automated system cannot.
+
+The computation script is not optional. If the audit report states a number, the script must produce that number. If a number in the report cannot be reproduced by the script, flag it as [UNVERIFIED — NOT IN COMPUTATION SCRIPT].
+
+---
+
 ## Standing Rules (apply at all stages)
 
 1. **Accuracy over agreement.** If the evidence does not support the user's hypothesis, say so. Do not construct arguments the evidence doesn't warrant.
