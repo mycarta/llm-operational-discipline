@@ -26,7 +26,7 @@ Core operational documents for managing LLM projects:
 
 ### Research Prompt
 
-- **[Research_Project_System_Prompt_v4.md](research-prompt/Research_Project_System_Prompt_v4.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/?p=XXXXX)
+- **[Research_Project_System_Prompt_v4.md](research-prompt/Research_Project_System_Prompt_v4.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/2026/02/20/when-your-ai-research-partner-fails-the-peer-review/)
 
 ### Writing (2 documents)
 
@@ -38,6 +38,7 @@ Guidelines for AI-assisted content drafting:
 ### Templates
 
 - **[copilot-instructions-template.md](templates/copilot-instructions-template.md)** — Behavioral guardrails for GitHub Copilot (Chat + Agent Mode), derived from the same failure modes documented in the blog post. Covers scope protection, verification discipline, merge protection, and anti-sycophancy. Copy this template to `.github/copilot-instructions.md` in any repository where you use Copilot. Customize the Project Context section per repo; the behavioral sections remain stable across projects.
+- **[human-responsibilities-contract.md](templates/human-responsibilities-contract.md)** — A bilateral contract you write with yourself before working with an LLM on any high-stakes, multi-session project. The LLM cannot enforce its own behavior — your audit capacity is the only fallback. This template encodes that. Covers cognitive presence requirements (when not to open a session), session-opening and closing duties, in-session citation auditing, stage-gate approval protocol, and a hard-commitments checklist. Fill in the placeholders for your project name, state file, protocol document, and documented failure history. Derived from a real protocol built after observed drift incidents that were caught by the human, not the model.
 
 ### Idea Capture
 
