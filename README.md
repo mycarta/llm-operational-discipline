@@ -39,6 +39,8 @@ Guidelines for AI-assisted content drafting:
 
 - **[copilot-instructions-template.md](templates/copilot-instructions-template.md)** — Behavioral guardrails for GitHub Copilot (Chat + Agent Mode), derived from the same failure modes documented in the blog post. Covers scope protection, verification discipline, merge protection, and anti-sycophancy. Copy this template to `.github/copilot-instructions.md` in any repository where you use Copilot. Customize the Project Context section per repo; the behavioral sections remain stable across projects.
 - **[human-responsibilities-contract.md](templates/human-responsibilities-contract.md)** — A bilateral contract you write with yourself before working with an LLM on any high-stakes, multi-session project. The LLM cannot enforce its own behavior — your audit capacity is the only fallback. This template encodes that. Covers cognitive presence requirements (when not to open a session), session-opening and closing duties, in-session citation auditing, stage-gate approval protocol, and a hard-commitments checklist. Fill in the placeholders for your project name, state file, protocol document, and documented failure history. Derived from a real protocol built after observed drift incidents that were caught by the human, not the model.
+- **[claude-code-claude-md-template.md](templates/claude-code-claude-md-template.md)** — CLAUDE.md template for Claude Code projects (CLI and VS Code chat mode). Covers LAW ZERO, parameter approval gates, reproducibility, code quality rules (type hints, logging, docstrings, exception handling), and the three-agent architecture (Claude Chat = strategy, Claude Code = execution, Human = decisions). Copy to the root of any project where you use Claude Code. Customize the project-specific sections; the behavioral sections remain stable across projects.
+- **[claude-ai-chat-project-instructions-template.md](templates/claude-ai-chat-project-instructions-template.md)** — Custom instructions template for Claude AI (claude.ai) project settings. Defines Claude's role as strategy partner and methodology oversight, NOT execution agent. Covers CC prompt protocol, faithful narration rules, session management, and standing discipline rules. Paste into the Custom Instructions field of a Claude AI project. Customize the project-specific sections per project.
 
 ### Idea Capture
 
@@ -47,6 +49,10 @@ Tangent management during LLM sessions:
 - **[Idea_Capture_as_LLM_Discipline.md](idea-capture/Idea_Capture_as_LLM_Discipline.md)** — Why tangent capture during LLM sessions is an operational discipline, not a productivity hack. Explains the cognitive cost of unrecorded tangents and how they degrade focus or get lost entirely
 - **[idea_capture_template.html](idea-capture/idea_capture_template.html)** — Single-file HTML tool that POSTs ideas directly to a Trello board via REST API. No dependencies, no build step — just open in a browser
 - **[README.md](idea-capture/idea_capture_README.md)** — Setup instructions: how to get your Trello API key, token, and board/list IDs
+
+### Document Review
+
+- **[LLM_Multi_Agent_Document_Review_Principles.md](llm-document-review/LLM_Multi_Agent_Document_Review_Principles.md)** — Practitioner lessons from a multi-month, multi-agent LLM-assisted review of ~25 regulatory submissions (one agent for extraction and summarization, a second for prompt design, validation, and synthesis). Covers the two-agent architecture, failure modes observed across heterogeneous document formats, and patterns that transfer to any structured extraction from a mixed-format corpus.
 
 ### Notes
 
@@ -170,6 +176,9 @@ llm-operational-discipline/
 │   ├── Idea_Capture_as_LLM_Discipline.md
 │   ├── idea_capture_template.html
 │   └── idea_capture_README.md
+├── llm-document-review/
+│   ├── LLM_Multi_Agent_Document_Review_Principles.md
+│   └── README.md
 ├── notes/
 │   └── claude_code_architecture_mapping.md
 ├── playbook/
@@ -185,7 +194,10 @@ llm-operational-discipline/
 ├── research-prompt/
 │   └── Research_Project_System_Prompt_v4.md
 ├── templates/
-│   └── copilot-instructions-template.md
+│   ├── copilot-instructions-template.md
+│   ├── human-responsibilities-contract.md
+│   ├── claude-code-claude-md-template.md
+│   └── claude-ai-chat-project-instructions-template.md
 └── writing/
     ├── faithful_narration_rules.md
     └── Blog_From_Project_Instructions.md
