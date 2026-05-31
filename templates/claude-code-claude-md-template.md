@@ -74,6 +74,7 @@ Fixing reproducibility outranks adding new features. If the pipeline cannot be r
 6. **Full file replacements over surgical edits.** When changing a script substantially, rewrite the whole file rather than patching fragments, so the file on disk is always coherent.
 7. **Verify the environment before running.** Confirm the interpreter, packages, and working directory before executing anything that matters.
 8. **grep dead_ends before proposing any approach.** Check the dead-ends log at proposal time, not after an attempt fails. If an approach is already recorded as a dead end, do not propose it again without saying why it might be different now.
+9. **Pre-register predictions and evaluation gates before the run.** Lock what you will measure and what constitutes pass/fail before executing. The timestamp authority is a git commit. No post-hoc threshold tuning without an explicit, logged amendment.
 
 ---
 
@@ -88,6 +89,7 @@ Derived from standard Python tooling discipline, filtered for ML pipeline and sc
 - **`--verbose` flag** on CLI scripts, wiring logging up to DEBUG.
 - **Enumerate at least three candidate approaches** with trade-offs before implementing any non-trivial task. Present them and wait for approval. This precedes the Parameter Approval Gate: design first, then parameters.
 - **No magic numbers.** Every numerical constant lives in a config dict or a named constant at the top of the script.
+- **Published code over paraphrase.** When a canonical reference provides source code under an open license, use it verbatim with attribution. Do not rewrite formulas into a fresh implementation when the original is available and cited in the project.
 
 <!-- ORIGIN: {optional - a debugging session lost to a swallowed exception or a buried magic number, if one motivated these} -->
 
