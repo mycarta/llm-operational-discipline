@@ -95,7 +95,42 @@ Derived from standard Python tooling discipline, filtered for ML pipeline and sc
 
 ---
 
-## G. Results Registry Rule  <!-- STABLE -->
+## G. Skills Gate  <!-- STABLE -->
+
+A `skills/` directory in the project root holds domain-specific reference
+material: correct patterns, common pitfalls, and API guidance for libraries
+and tools used in the project.
+
+**Verification:** Before the first code-writing task in a session, scan the
+`skills/` directory and confirm the minimum required files are present:
+
+<!-- CUSTOMIZE: add or remove lines as the project's dependencies require -->
+- `skills/holoviz/param.md`
+- `skills/holoviz/hvplot.md`
+- `skills/holoviz/panel.md`
+- `skills/holoviz/holoviews.md`
+
+If any required file is missing, halt and report before writing code. Do not
+proceed with stale training knowledge as a substitute for the skill file.
+
+**Usage:** Before writing any code in a domain that has a skill file, read
+the relevant file(s). This is a gate, not a suggestion.
+
+Adherence policy:
+- If a skill documents a "do not" or "deprecated" anti-pattern, that is a
+  hard constraint. Do not use the deprecated API even if you have seen it
+  elsewhere.
+- If a skill documents a positive pattern for what you are building, follow
+  it by default. Deviate only with a stated, project-specific reason.
+- If the skill is silent on your specific case, proceed with standard
+  practice and note that the skill did not cover it.
+
+Skill files are reference material, not generated output. They are curated
+by the human and version-controlled alongside the code.
+
+---
+
+## H. Results Registry Rule  <!-- STABLE -->
 
 Every score claim cites a registry row. Registry rows enter only from the primary source: the submission page, the evaluation output, the leaderboard. No handoff file, chat summary, or remembered number overrides the registry. If a score is not in the registry with a citation to its primary source, it is not a result yet.
 
@@ -103,13 +138,13 @@ Every score claim cites a registry row. Registry rows enter only from the primar
 
 ---
 
-## H. One Variable Per Experiment  <!-- STABLE -->
+## I. One Variable Per Experiment  <!-- STABLE -->
 
 Each experiment changes exactly one thing from a known baseline. State explicitly what changed and against which baseline. If two things change at once, the result attributes to neither.
 
 ---
 
-## I. Append-Only Documentation  <!-- STABLE -->
+## J. Append-Only Documentation  <!-- STABLE -->
 
 Handoff files and hard-rules files are append-only. Finished prose is never rewritten. New findings are added at named anchors, dated, below what is already there. The record of what was believed and when must survive, even when it was later revised.
 
@@ -117,11 +152,17 @@ Handoff files and hard-rules files are append-only. Finished prose is never rewr
 
 ---
 
-## J. Communication Style  <!-- STABLE -->
+## K. Communication Style  <!-- STABLE -->
 
 Accuracy over agreement. If the answer to "should we do X?" is no, say no first; do not draft X and then evaluate it.
 
 Direct answers without politeness padding. No preambles, no apologies, no filler. Show your reasoning for non-trivial decisions. When the conclusion is clear and the action is concrete, execute it within the gates above rather than narrating what could be done.
+
+Never use interactive polls, button prompts, or structured selection widgets
+to ask questions. They are presentation theater that adds friction without
+value. If you have a question or need to present options, write it as plain
+text in the conversation. Plain text is readable in context, copiable into
+handoff files, and does not interrupt the flow.
 
 ---
 
@@ -130,7 +171,7 @@ Direct answers without politeness padding. No preambles, no apologies, no filler
      across projects; everything below is project-specific.
      ============================================================ -->
 
-## K. Project Context  <!-- CUSTOMIZE -->
+## L. Project Context  <!-- CUSTOMIZE -->
 
 {One-paragraph description of the task: what is being built or analyzed, the dataset, the evaluation metric, the competition or project rules, and the deadline.}
 
@@ -142,11 +183,12 @@ Direct answers without politeness padding. No preambles, no apologies, no filler
 
 ---
 
-## L. Directory Structure  <!-- CUSTOMIZE -->
+## M. Directory Structure  <!-- CUSTOMIZE -->
 
 ```
 {project}/
 ├── config.py          # single source of truth for all parameters
+├── skills/            # domain-specific reference for Claude Code (read-before-write)
 ├── data/
 │   ├── raw/           # IMMUTABLE - never modified
 │   └── processed/
@@ -160,28 +202,30 @@ Immutability rules:
 - Raw data is never modified.
 - Features are append-only and versioned.
 - `config.py` is the single source of truth for parameters.
+- `skills/` contains curated reference material. Read before writing code in
+  the relevant domain (see Skills Gate rule above).
 
 ---
 
-## M. Feature Sets / Data Schema  <!-- CUSTOMIZE -->
+## N. Feature Sets / Data Schema  <!-- CUSTOMIZE -->
 
 {Versioned feature sets or the data schema. List columns, dtypes, and which version introduced each.}
 
 ---
 
-## N. Model Configuration  <!-- CUSTOMIZE -->
+## O. Model Configuration  <!-- CUSTOMIZE -->
 
 {Default hyperparameters, in the same form they live in `config.py`. These are the agreed defaults; changes go through the Parameter Approval Gate.}
 
 ---
 
-## O. CV / Evaluation Configuration  <!-- CUSTOMIZE -->
+## P. CV / Evaluation Configuration  <!-- CUSTOMIZE -->
 
 {Cross-validation strategy and parameters: scheme, number of folds, split keys, random seed (e.g., seed 42), and how the local metric maps to the official one.}
 
 ---
 
-## P. Project-Specific Hard Rules  <!-- CUSTOMIZE -->
+## Q. Project-Specific Hard Rules  <!-- CUSTOMIZE -->
 
 {Rules confirmed by experimental evidence in this project. Each cites its origin: the experiment or failure that established it.}
 
@@ -189,19 +233,19 @@ Immutability rules:
 
 ---
 
-## Q. Key References  <!-- CUSTOMIZE -->
+## R. Key References  <!-- CUSTOMIZE -->
 
 {Papers, source datasets, and tools, with specific citations. LAW ZERO applies: a reference is a citation you can point to, not a remembered title.}
 
 ---
 
-## R. Known Bugs and Gotchas  <!-- CUSTOMIZE -->
+## S. Known Bugs and Gotchas  <!-- CUSTOMIZE -->
 
 {Project-specific traps: a library version that breaks something, a column that is mislabeled upstream, an off-by-one in a provided loader. Append as found.}
 
 ---
 
-## S. Environment  <!-- CUSTOMIZE -->
+## T. Environment  <!-- CUSTOMIZE -->
 
 - **Python:** {version}
 - **Key packages:** {with versions}
