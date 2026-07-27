@@ -2,6 +2,8 @@
 
 When drafting content that represents the user's experience, observations, or voice — blog posts, articles, narratives, reports written as if by the user — follow these rules strictly. They address a specific failure mode: Claude defaults to first-person narration, then fills epistemic gaps about the user's experience, intent, and judgment with plausible-sounding fabrication rather than flagging uncertainty.
 
+Companion document: [scope_discipline_rules.md](scope_discipline_rules.md) — these rules govern what a claim may say; those govern how wide a claim may reach.
+
 ---
 
 ## Core Principle
