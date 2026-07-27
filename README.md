@@ -33,6 +33,7 @@ Core operational documents for managing LLM projects:
 Guidelines for AI-assisted content drafting:
 
 - **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** — 20 rules for instructing Claude to draft content in your voice without editorializing, fabricating scenes, attributing intent to the tool, or filling epistemic gaps with plausible-sounding content. Each rule grounded in a specific documented failure across five blog post projects
+- **[scope_discipline_rules.md](writing/scope_discipline_rules.md)** — Companion to the faithful narration rules governing claim scope: a claim may not be wider than the check that supports it. Per-item provenance markers in place of global verification claims, and explicit scoping of negative claims
 - **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** — Workflow for using a lightweight model to draft and a frontier model to QA blog posts from project materials
 
 ### Templates
