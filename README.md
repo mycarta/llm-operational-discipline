@@ -28,7 +28,7 @@ Core operational documents for managing LLM projects:
 
 - **[Research_Project_System_Prompt_v4.md](research-prompt/Research_Project_System_Prompt_v4.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/2026/02/20/when-your-ai-research-partner-fails-the-peer-review/)
 
-### Writing (2 documents)
+### Writing (3 documents)
 
 Guidelines for AI-assisted content drafting:
 
@@ -92,7 +92,8 @@ Annotated external sources that validate and extend the operational discipline f
 **If you're drafting content with Claude:**
 
 1. Use **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** as project instructions for any drafting session
-2. Follow the **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** pipeline for blog posts
+2. Add **[scope_discipline_rules.md](writing/scope_discipline_rules.md)** alongside them — it governs how wide a claim may reach, and applies to verification and status claims as well as drafting
+3. Follow the **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** pipeline for blog posts
 
 **If you're rescuing an existing degraded project:**
 
@@ -201,6 +202,7 @@ llm-operational-discipline/
 │   └── claude-ai-chat-project-instructions-template.md
 └── writing/
     ├── faithful_narration_rules.md
+    ├── scope_discipline_rules.md
     └── Blog_From_Project_Instructions.md
 ```
 
