@@ -28,12 +28,13 @@ Core operational documents for managing LLM projects:
 
 - **[Research_Project_System_Prompt_v4.md](research-prompt/Research_Project_System_Prompt_v4.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/2026/02/20/when-your-ai-research-partner-fails-the-peer-review/)
 
-### Writing (3 documents)
+### Writing (4 documents)
 
 Guidelines for AI-assisted content drafting:
 
-- **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** — 20 rules for instructing Claude to draft content in your voice without editorializing, fabricating scenes, attributing intent to the tool, or filling epistemic gaps with plausible-sounding content. Each rule grounded in a specific documented failure across five blog post projects
+- **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** — 21 rules for instructing Claude to draft content in your voice without editorializing, fabricating scenes, attributing intent to the tool, or filling epistemic gaps with plausible-sounding content. Each rule grounded in a specific documented failure across five blog post projects
 - **[scope_discipline_rules.md](writing/scope_discipline_rules.md)** — Companion to the faithful narration rules governing claim scope: a claim may not be wider than the check that supports it. Per-item provenance markers in place of global verification claims, and explicit scoping of negative claims
+- **[learning_session_rules.md](writing/learning_session_rules.md)** — Rules for sessions whose purpose is understanding rather than production: sketch gates, chunking work, teach-backs. A two-sided contract, learner and model, covering struggle as load-bearing, working-memory overflow and extraction, incubation, analogy from the learner's own compiled chunks, and the model-side discipline of one question at a time, real objects only, and leaving the pencil with the learner. Grounded in two documented sessions
 - **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** — Workflow for using a lightweight model to draft and a frontier model to QA blog posts from project materials
 
 ### Templates
@@ -93,7 +94,8 @@ Annotated external sources that validate and extend the operational discipline f
 
 1. Use **[faithful_narration_rules.md](writing/faithful_narration_rules.md)** as project instructions for any drafting session
 2. Add **[scope_discipline_rules.md](writing/scope_discipline_rules.md)** alongside them — it governs how wide a claim may reach, and applies to verification and status claims as well as drafting
-3. Follow the **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** pipeline for blog posts
+3. Fetch **[learning_session_rules.md](writing/learning_session_rules.md)** fresh at the start of any session about understanding rather than production
+4. Follow the **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** pipeline for blog posts
 
 **If you're rescuing an existing degraded project:**
 
@@ -203,6 +205,7 @@ llm-operational-discipline/
 └── writing/
     ├── faithful_narration_rules.md
     ├── scope_discipline_rules.md
+    ├── learning_session_rules.md
     └── Blog_From_Project_Instructions.md
 ```
 
