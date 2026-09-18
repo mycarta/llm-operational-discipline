@@ -28,7 +28,7 @@ Core operational documents for managing LLM projects:
 
 - **[Research_Project_System_Prompt_v4.md](research-prompt/Research_Project_System_Prompt_v4.md)** — System prompt for evidence-based critical analysis projects. Five-step workflow with source classification (Primary/Secondary × Direct/Analogical/Contextual), source inventory, six decision checkpoints, and 16 standing rules. Built from documented failures during a real research session — see the companion blog post ["When Your AI Research Partner Fails the Peer Review"](https://mycartablog.com/2026/02/20/when-your-ai-research-partner-fails-the-peer-review/)
 
-### Writing (4 documents)
+### Writing (5 documents)
 
 Guidelines for AI-assisted content drafting:
 
@@ -36,6 +36,7 @@ Guidelines for AI-assisted content drafting:
 - **[scope_discipline_rules.md](writing/scope_discipline_rules.md)** — Companion to the faithful narration rules governing claim scope: a claim may not be wider than the check that supports it. Per-item provenance markers in place of global verification claims, and explicit scoping of negative claims
 - **[learning_session_rules.md](writing/learning_session_rules.md)** — Rules for sessions whose purpose is understanding rather than production: sketch gates, chunking work, teach-backs. A two-sided contract, learner and model, covering struggle as load-bearing, working-memory overflow and extraction, incubation, analogy from the learner's own compiled chunks, and the model-side discipline of one question at a time, real objects only, and leaving the pencil with the learner. Grounded in two documented sessions
 - **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** — Workflow for using a lightweight model to draft and a frontier model to QA blog posts from project materials
+- **[writing_in_my_voice.md](writing/writing_in_my_voice.md)**: A compact version of the faithful narration rules and the blog workflow, short enough to paste into Claude's user preferences. The full files remain the reference
 
 ### Templates
 
