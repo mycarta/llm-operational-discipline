@@ -97,6 +97,7 @@ Annotated external sources that validate and extend the operational discipline f
 2. Add **[scope_discipline_rules.md](writing/scope_discipline_rules.md)** alongside them — it governs how wide a claim may reach, and applies to verification and status claims as well as drafting
 3. Fetch **[learning_session_rules.md](writing/learning_session_rules.md)** fresh at the start of any session about understanding rather than production
 4. Follow the **[Blog_From_Project_Instructions.md](writing/Blog_From_Project_Instructions.md)** pipeline for blog posts
+5. For a compact version short enough for Claude's user preferences, paste the block in **[writing_in_my_voice.md](writing/writing_in_my_voice.md)**
 
 **If you're rescuing an existing degraded project:**
 
@@ -207,7 +208,8 @@ llm-operational-discipline/
     ├── faithful_narration_rules.md
     ├── scope_discipline_rules.md
     ├── learning_session_rules.md
-    └── Blog_From_Project_Instructions.md
+    ├── Blog_From_Project_Instructions.md
+    └── writing_in_my_voice.md
 ```
 
 ---
